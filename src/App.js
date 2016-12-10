@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Todo from './components/todo';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div>
+        <nav className="navbar navbar-light bg-faded">
+          <a className="navbar-brand" href="#">Bootstrap</a>
+        </nav>
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 col-sm-10 col-md-8">
+              <Todo />
+            </div>
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }

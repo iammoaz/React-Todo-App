@@ -22,3 +22,26 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: stretch;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: stretch;
+
+  background-color: #FAFAFA;
+  border: 2px solid #EEE;
+  border-radius: 2px;
+  align-items: stretch;
+  margin: 2rem auto;
+  padding: 2rem;
+}
