@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import Todo from './components/todo';
+import NavBar from './components/todo-nav';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-light bg-faded">
-          <a className="navbar-brand" href="#">Bootstrap</a>
-        </nav>
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12 col-sm-10 col-md-8">
-              <Todo />
-            </div>
+        <NavBar />
+        <div className="container app-container">
+          <div className="row app-row">
+            <Todo />
           </div>
         </div>
       </div>

@@ -59,7 +59,7 @@ class Todo extends Component {
       let filteredTodos = TodoAPI.filterTodos(todos, showCompleted, searchText);
 
       return (
-         <div className="todo-container">
+         <div className="col-xs-12 col-sm-12 col-md-8 todo-container">
            <TodoSearch onSearch={this.handleSearch.bind(this)}/>
            <TodoList todos={filteredTodos} onToggle={this.handleToggle.bind(this)} />
            <TodoAdd onAddTodo={this.handleAddTodo.bind(this)}/>

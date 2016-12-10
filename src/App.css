@@ -1,47 +1,160 @@
-.App {
+/*Navigation Bar*/
+.navbar {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  background-color: white;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/*App Container*/
+.app-container {
+  margin: 4rem auto;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-.container {
+.app-row {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: stretch;
+  justify-content: center;
+  margin: 1rem auto;
 }
 
-.row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: stretch;
-
-  background-color: #FAFAFA;
-  border: 2px solid #EEE;
+/*Todo Container*/
+.todo-container {
+  margin: auto;
+  background-color: #FEFEFE;
+  border: 2px solid #C0C0C0;
   border-radius: 2px;
-  align-items: stretch;
-  margin: 2rem auto;
-  padding: 2rem;
+}
+
+ /*Todo Search Form*/
+.form-control{
+  border: 2px solid #D0D0D0;
+  background-color: #D0D0D0;
+  border-radius: 2px;
+  margin: 1rem auto;
+  padding: 1rem;
+  color: #404040;
+}
+
+.form-control:focus {
+  border: 2px solid #D0D0D0;
+  color: #404040;
+}
+
+.form-control::-webkit-input-placeholder { color: #909090; }
+
+.form-check {
+  display: flex;
+  justify-content: flex-start;;
+  align-content: stretch;
+  align-items: baseline;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  background-color: #D0D0D0;
+  border-radius: 2px;
+}
+
+.form-check-input:only-child {
+  position: absolute;
+}
+
+.form-check-label {
+  padding-left: 3rem;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: #606060;
+}
+
+.form-check-label input {
+  margin-left: -1.75rem;
+}
+
+/*Todo Add Form*/
+.add-container {
+  margin: 1rem auto;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 1rem;
+  background-color: #00A5B2;
+  border: 2px solid #00A5B2;
+  border-radius: 2px;
+}
+
+.btn-primary:hover {
+  background-color: #00B5B2;
+  border: 2px solid #00A5B2;
+  border-radius: 2px;
+}
+
+.btn-primary:hover:active:focus, .btn:hover:active:focus {
+  background-color: #00B5B2 !important;
+  border: 2px solid #00A5B2 !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  background-image: none;
+  outline: 0;
+}
+
+/*Todo Elements*/
+.todos-container {
+  margin: 1rem auto;
+  padding: 1px;
+  background-color: #d0d0d0;
+  border: 2px solid #d0d0d0;
+  border-radius: 2px;
+}
+
+.nothing-todo {
+  text-align: center;
+  margin: 0.5rem auto;
+  padding: 1rem 0;
+  color: #606060;
+}
+
+.todo-element {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 1rem;
+  color: #404040;
+  background: #dadada;
+  transition: background .3s ease;
+}
+
+.todo-element:hover {
+  background: #eaeaea;
+}
+
+.todo-element >:first-child {
+  margin-right: 1rem;
+}
+
+.todo-element p, input {
+  margin: 0;
+}
+
+.todo-element .todo-text {
+  font-size: 1rem;
+  color: #505050;
+  text-decoration: none;
+}
+
+.todo-element .todo-subtext {
+  font-size: 0.75rem;
+  color: #707070;
+  text-decoration: none;
+}
+
+.todo-completed .todo-text {
+  color: #707070;
+  text-decoration: line-through;
+}
+
+.todo-completed .todo-subtext {
+  color: #808080;
 }
